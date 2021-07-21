@@ -14,7 +14,7 @@ DROP TABLE user_info;
 
 CREATE TABLE user_info (
 	id	varchar2(15)		NOT NULL,
-	pass	varchar2(15)		NULL,
+	pass	varchar2(100)		NULL,
 	reg_num	date		NULL,
 	sex	varchar2(6)		NULL,
 	reg_date	date		NULL
