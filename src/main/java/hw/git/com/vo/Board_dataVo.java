@@ -1,6 +1,8 @@
 package hw.git.com.vo;
 
-public class boardVo {
+import java.util.Date;
+
+public class Board_dataVo {
 	private int board_num; //게시글 번호
 	private int category_num;//카테고리 번호
 	private String id;//작성자
@@ -8,6 +10,7 @@ public class boardVo {
 	private String board_name;// 글제목
 	private String board_subject;//글내용
 	private int status;//글상태
+	private Date w_date;//글작성일
 	
 	public int getBoard_num() {
 		return board_num;
@@ -50,5 +53,11 @@ public class boardVo {
 	}
 	public void setStatus(int status) {
 		this.status = status;
+	}
+	public Date getW_date() {
+		return w_date;
+	}
+	public void setW_date(Date w_date) {
+		this.w_date = w_date;
 	}
 }
