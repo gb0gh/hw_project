@@ -10,6 +10,9 @@ CREATE TABLE board_data (
 	status	number		NULL
 );
 
+alter table board_data add w_date date default sysdate;
+
+
 DROP TABLE user_info;
 
 CREATE TABLE user_info (
@@ -201,3 +204,15 @@ ALTER TABLE hate ADD CONSTRAINT FK_user_info_TO_hate_1 FOREIGN KEY (
 REFERENCES user_info (
 	id
 );
+
+insert into category (category_num, category_name)
+values (1, '공지사항');
+insert into category (category_num, category_name)
+values (2, '자유게시판');
+insert into category (category_num, category_name)
+values (3, '투기장');
+insert into category (category_num, category_name)
+values (4, '영상');
+
+insert into board_data values
+();
