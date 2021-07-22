@@ -8,15 +8,11 @@
 	</settings>
 
 	<typeAliases>
-		<!-- 
-			<typeAlias alias="user" type="com.db.test.domain.User"/>
-		 -->
+			<typeAlias alias="User" type="hw.git.com.vo.User_infoVo"/>
 	</typeAliases>
 
 	<mappers>
-		<!--  
-		<mapper resource="sql/user.xml"/>
-		-->
+		<mapper resource="sql/User.xml"/>
 	</mappers>
 
 </configuration>
